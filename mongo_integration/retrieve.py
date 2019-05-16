@@ -6,10 +6,10 @@ def find_metadata(collection, query):
 
     :param collection: Collection, instance of the collection where the metadata is stored
     :param query: dict[], dictionary used to query the collection
-    :return: pymongo.cursor.Cursor, iterable object with the retrieved metadata documents
+    :return: dict[], dictionary containing the retrieved metadata document
     """
 
-    metadata = collection.find(query)
+    metadata = collection.find_one(query)
     return metadata
 
 
