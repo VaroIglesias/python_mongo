@@ -1,0 +1,8 @@
+mongodb:
+  username: "user"
+  password: "pass"
+  host: "localhost"
+  port: 27017
+  database: "cognitive"
+  collection: "recognition"
+  namespace: "modelos"
